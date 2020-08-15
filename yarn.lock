@@ -8637,6 +8637,11 @@ react-scripts@3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-typescript-pdf-reader@0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/react-typescript-pdf-reader/-/react-typescript-pdf-reader-0.0.13.tgz#2906da81b90c305b8614adc190f4def6108c3d46"
+  integrity sha512-QrUeJjxnfzEUR9acNmHDLxn/JqMSVTKIGfAKUoSxHHHFCmTw++ksWmfkzBhOrshtUBJF/0zIt8XCyBUqS9mNgA==
+
 react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
