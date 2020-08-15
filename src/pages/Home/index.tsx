@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import cpsLogo from '../../assets/images/cps-logo.png';
 import log from '../../assets/images/courses/log.jpg';
 import ads from '../../assets/images/courses/ads.jpg';
@@ -23,13 +24,13 @@ export default function Home(){
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">Início</a>
+                <Link className="nav-link" to="/">Início</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Acadêmico</a>
+                <Link className="nav-link" to="/academico">Acadêmico</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Cursos</a>
+                <Link className="nav-link" to="/cursos">Cursos</Link>
               </li>
             </ul>
           </div>
