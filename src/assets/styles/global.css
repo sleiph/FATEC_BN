@@ -33,6 +33,14 @@ textarea {
     color: var(--color-text-base);
 }
 
+.logoCPS{
+    width: 25%;
+}
+
+#main-header{
+    margin-top: 40%;
+}
+
 @media (min-width: 700px) {
     :root {
         font-size: 62.5%;
