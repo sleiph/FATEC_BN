@@ -96,7 +96,7 @@ export default function Home(){
                 </div>
                 <div className="card-footer">
                   <a href={ppLog} target="_blank" className="btn btn-primary">Projeto Pedagógico Logística</a>
-                  <a href={ppLogAp} className="btn btn-primary">Projeto Pedagógico Logística Aeroportuária</a>
+                  <a href={ppLogAp} target="_blank" className="btn btn-primary">Projeto Pedagógico Logística Aeroportuária</a>
                 </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppAds} className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href={ppAds} target="_blank" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppComExt} className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href={ppComExt} target="_blank" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppInd} className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href={ppInd} target="_blank" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
               </div>
             </div>
