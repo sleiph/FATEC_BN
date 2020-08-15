@@ -1,12 +1,11 @@
 import React from 'react';
+import PDFReader from 'react-typescript-pdf-reader';
 
 import cpsLogo from './assets/images/cps-logo.png';
 import log from './assets/images/courses/log.jpg';
 import ads from './assets/images/courses/ads.jpg';
 import comExt from './assets/images/courses/com-ext.jpg';
 import ind from './assets/images/courses/ind.jpg';
-
-
 
 function App() {
   return (
@@ -93,7 +92,8 @@ function App() {
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
                 </div>
                 <div className="card-footer">
-                  <a href="#" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href="" className="btn btn-primary">Projeto Pedagógico Logística</a>
+                  <a href="" className="btn btn-primary">Projeto Pedagógico Logística Aeroportuária</a>
                 </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ function App() {
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
                 </div>
                 <div className="card-footer">
-                  <a href="#" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href="" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ function App() {
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
                 </div>
                 <div className="card-footer">
-                  <a href="#" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href="" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ function App() {
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                 </div>
                 <div className="card-footer">
-                  <a href="#" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href="" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
               </div>
             </div>
