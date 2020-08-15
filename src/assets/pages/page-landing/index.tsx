@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import NavBar from '../../components/navbar/index';
 import SocialMedia from '../../components/social-media/index';
+import Footer from '../../components/footer/index';
 
 import '../../styles/bootstrap.css';
 import '../../styles/global.css';
@@ -62,13 +63,8 @@ export default function Home(){
                 <SocialMedia />
               </address>
           </div>
+          <Footer />
         </div>
-      <footer id="main-footer" className="py-5 bg-black">
-        <div className="container">
-          <img src="" alt="Centro Paula Souza"/>
-          <p className="m-0 text-center text-white">Copyright &copy; Fatec Guarulhos 2020</p>
-        </div>
-      </footer>
       </div>
     </div>
     );

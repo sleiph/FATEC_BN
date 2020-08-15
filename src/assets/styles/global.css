@@ -2,7 +2,7 @@
     font-size: 60%;
 
     --color-background: #F0F0F7;
-    --color-text-base: #8f1414;
+    --color-text-base: black;
 }
 
 * {
@@ -31,11 +31,6 @@ button,
 textarea {
     font: 500 1.6rem Poppins;
     color: var(--color-text-base);
-}
-
-.container {
-    width: 90vw;
-    max-width: 700px;
 }
 
 @media (min-width: 700px) {
