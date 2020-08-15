@@ -1,0 +1,100 @@
+:root{
+    --facebook: #3B5998;
+    --twitter: #3CF;
+    --instagram: #DC4A38;
+    --whatsapp: #25D366;
+    --linkedin: #2867B2;
+}
+
+body {
+    height: 100vh;
+    background: var(--color-background);
+
+    display: grid;
+    place-items: center;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 0.4rem;
+}
+
+.social-media > div {
+    width:9rem;
+    height:9rem;
+    background: #fff;
+    font-size:4rem;
+    display:grid;
+    place-items:center;
+    border-radius: 2rem;
+    position:relative;
+    overflow:hidden;
+    transition:1s;
+    box-shadow: 0 0 1rem #ddd;
+}
+
+.social-media > div:hover::after {
+    background: red;
+    transform: rotateZ(40deg) translate(0rem, 0rem);
+}
+
+.social-media > div::after {
+    transition: .5s;
+    content: "";
+    background: green;
+    width: 14rem;
+    height: 11.5rem;
+    transform: rotateZ(40deg) translate(0rem, 12rem);
+    position: absolute;
+}
+
+.social-media > div:nth-child(1) {
+    color: var(--facebook);
+}
+
+.social-media > div:nth-child(1)::after {
+    background: var(--facebook);
+}
+
+.social-media div:nth-child(2) {
+    color: var(--twitter);
+}
+
+.social-media div:nth-child(2)::after {
+    background: var(--twitter);
+}
+
+.social-media div:nth-child(3) {
+    color: var(--instagram);
+}
+
+.social-media div:nth-child(3)::after {
+    background: var(--instagram);
+}
+
+.social-media div:nth-child(4) {
+    color: var(--whatsapp);
+}
+
+.social-media div:nth-child(4)::after {
+    background: var(--whatsapp);
+}
+
+.social-media div:nth-child(5) {
+    color: var(--linkedin);
+}
+
+.social-media div:nth-child(5)::after {
+    background: var(--linkedin);
+}
+
+.social-media > div span {
+    position: absolute;
+    z-index: 10;
+    transition: 1s;
+}
+
+.social-media > div:hover span {
+    color: #FFF;
+}
