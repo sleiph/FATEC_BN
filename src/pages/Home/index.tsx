@@ -1,10 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+
 import cpsLogo from '../../assets/images/cps-logo.png';
 import log from '../../assets/images/courses/log.jpg';
 import ads from '../../assets/images/courses/ads.jpg';
 import comExt from '../../assets/images/courses/com-ext.jpg';
 import ind from '../../assets/images/courses/ind.jpg';
+import fb from '../../assets/images/social-media/facebook.svg';
+import instagram from '../../assets/images/social-media/instagram.svg';
+import twitter from '../../assets/images/social-media/twitter.svg';
+import linkedin from '../../assets/images/social-media/linkedin.svg';
 import './style.css';
 
 let ppLog = require('../../assets/pp/log.pdf');
@@ -18,14 +23,14 @@ export default function Home(){
         <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <h1 className="text-white">FATEC</h1>
+          <Link className="nav-link" to="/"><h1 className="text-white">FATEC</h1></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <Link className="nav-link" to="/">Início</Link>
+                <Link className="nav-link" to=""></Link>
               </li>
               <div className="dropdown">
                 <li className="nav-item">
@@ -61,7 +66,7 @@ export default function Home(){
         <div className="container h-100">
           <div className="row">
             <div className="col-lg-12">
-              <h1 id="main-text" className="display-4 text-white mt-5 mb-2"><strong>Bem vindo a Fatec Guarulhos!</strong></h1>
+              <h1 id="main-text" className="display-4 text-white mt-5 mb-2"><strong>BEM-VINDO À FATEC GUARULHOS</strong></h1>
               <p className="lead mb-5 text-white">Ensino superior gratuito e de qualidade.</p>
             </div>
           </div>
@@ -71,39 +76,42 @@ export default function Home(){
   
       <div className="container">
         <div className="row">
-          <div className="col-md-8 mb-5">
+          <div className="col-md-12 mb-5">
             <h2>Sobre as FATECS</h2>
               <hr/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
                 <Link className="btn btn-primary btn-lg" to="#">Saber mais! &raquo;</Link>
           </div>
+          <div className="col-md-8 mb-5">
+            <h2>A unidade de Guarulhos</h2>
+              <hr/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+                <address>
+                  <strong>Endereço</strong>
+                  <br/>R. Cristóbal Cláudio Elilo, 88 - Parque Cecap, Guarulhos
+                </address>
+          </div>
           <div className="col-md-4 mb-5">
             <h2>Contatos</h2>
               <hr/>
               <address>
-                <strong>Endereço</strong>
-                <br/>R. Cristóbal Cláudio Elilo, 88
-                <br/>Parque Cecap, Guarulhos
-                <br/>
-              </address>
-              <address>
                 <strong>Telefones</strong>
                 <br/>
-                <abbr title="Phone">(11) 2229-0392 / 2229-0393</abbr>
-                <br/>
-                <br/>
+                <p title="Phone">(11) 2229-0392 / 2229-0393</p>
                 <strong>Emails</strong>
+                <p title="Email">Diretoria:  <a href="mailto:f167dir@cps.sp.gov.br">f167dir@cps.sp.gov.br</a></p>
+                <p title="Email">Administrativo:  <a href="mailto:f167adm@cps.sp.gov.br">f167adm@cps.sp.gov.br</a></p>
+                <p title="Email">Acadêmico:  <a href="mailto:f167acad@cps.sp.gov.br">f167acad@cps.sp.gov.br</a></p>
+                <strong>Redes Sociais</strong>
                 <br/>
-                <abbr title="Email">Diretoria:  </abbr>
-                <a href="mailto:f167dir@cps.sp.gov.br">f167dir@cps.sp.gov.br</a>
-                <br/>
-                <abbr title="Email">Administrativo:  </abbr>
-                <a href="mailto:f167adm@cps.sp.gov.br">f167adm@cps.sp.gov.br</a>
-                <br/>
-                <abbr title="Email">Acadêmico:  </abbr>
-                <a href="mailto:f167acad@cps.sp.gov.br">f167acad@cps.sp.gov.br</a>
+                <Link to=""><img src={fb} alt="Facebook"/></Link>
+                <Link to=""><img src={instagram} alt="Instagram"/></Link>
+                <Link to=""><img src={twitter} alt="Twitter"/></Link>
+                <Link to=""><img src={linkedin} alt="Linkedin"/></Link>
               </address>
+
           </div>
         </div>
         <div className="row">
@@ -160,10 +168,10 @@ export default function Home(){
         </div>
       </div>
   
-      <footer id="main-footer" className="py-5 bg-dark">
+      <footer id="main-footer" className="py-5 bg-black">
         <div className="container">
           <img src={cpsLogo} alt="Centro Paula Souza"/>
-          <p className="m-0 text-center text-black">Copyright &copy; Fatec Guarulhos 2020</p>
+          <p className="m-0 text-center text-white">Copyright &copy; Fatec Guarulhos 2020</p>
         </div>
       </footer>
       
