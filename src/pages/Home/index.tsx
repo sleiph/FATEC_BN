@@ -5,6 +5,7 @@ import log from '../../assets/images/courses/log.jpg';
 import ads from '../../assets/images/courses/ads.jpg';
 import comExt from '../../assets/images/courses/com-ext.jpg';
 import ind from '../../assets/images/courses/ind.jpg';
+import './style.css';
 
 let ppLog = require('../../assets/pp/log.pdf');
 let ppLogAp = require('../../assets/pp/log-ap.pdf');
@@ -26,12 +27,30 @@ export default function Home(){
               <li className="nav-item active">
                 <Link className="nav-link" to="/">Início</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/academico">Acadêmico</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/cursos">Cursos</Link>
-              </li>
+              <div className="dropdown">
+                <li className="nav-item">
+                  <Link className="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" to="#">Cursos</Link>
+                  <div className="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
+                    <Link className="dropdown-item text-light" to="#">CST em Análise e Desenvolvimento de Sistemas</Link>
+                    <Link className="dropdown-item text-light" to="#">CST em Comércio Exterior</Link>
+                    <Link className="dropdown-item text-light" to="#">CST em Gestão da Produção Industrial</Link>
+                    <Link className="dropdown-item text-light" to="#">CST em Logística</Link>
+                    <Link className="dropdown-item text-light" to="#">CST em Logística Aeroportuária</Link>
+                  </div>
+                </li>
+              </div>
+              <div className="dropdown">
+                <li className="nav-item">
+                  <Link className="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" to="#">Acadêmico</Link>
+                  <div className="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
+                    <Link className="dropdown-item text-light" to="#">Biblioteca</Link>
+                    <Link className="dropdown-item text-light" to="#">Calendário Acadêmico</Link>
+                    <Link className="dropdown-item text-light" to="#">Docentes</Link>
+                    <Link className="dropdown-item text-light" to="#">Discentes</Link>
+                  </div>
+                </li>
+              </div>
+              
             </ul>
           </div>
         </div>
@@ -57,7 +76,7 @@ export default function Home(){
               <hr/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-                <a className="btn btn-primary btn-lg" href="#">Saber mais! &raquo;</a>
+                <Link className="btn btn-primary btn-lg" to="#">Saber mais! &raquo;</Link>
           </div>
           <div className="col-md-4 mb-5">
             <h2>Contatos</h2>
@@ -96,8 +115,8 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppLog} target="_blank" className="btn btn-primary">Projeto Pedagógico Logística</a>
-                  <a href={ppLogAp} target="_blank" className="btn btn-primary">Projeto Pedagógico Logística Aeroportuária</a>
+                  <a href={ppLog} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Projeto Pedagógico Logística</a>
+                  <a href={ppLogAp} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Projeto Pedagógico Logística Aeroportuária</a>
                 </div>
             </div>
           </div>
@@ -109,7 +128,7 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppAds} target="_blank" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href={ppAds} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
             </div>
           </div>
@@ -121,7 +140,7 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppComExt} target="_blank" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href={ppComExt} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
             </div>
           </div>
@@ -133,7 +152,7 @@ export default function Home(){
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                 </div>
                 <div className="card-footer">
-                  <a href={ppInd} target="_blank" className="btn btn-primary">Projeto Pedagógico</a>
+                  <a href={ppInd} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Projeto Pedagógico</a>
                 </div>
               </div>
             </div>
@@ -147,6 +166,7 @@ export default function Home(){
           <p className="m-0 text-center text-black">Copyright &copy; Fatec Guarulhos 2020</p>
         </div>
       </footer>
+      
     </div>
     );
 }
