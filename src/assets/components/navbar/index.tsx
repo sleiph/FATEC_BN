@@ -8,60 +8,50 @@ import '../../styles/global.css';
 function NavBar() {
     return (
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div className="container">
-      <a className="navbar-brand" href="index.html">Fatec Guarulhos</a>
-      <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarResponsive">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="about.html">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="services.html">Services</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a className="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a className="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a className="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a className="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a className="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-            </div>
-          </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a className="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a className="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a className="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
-          </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
-            </a>
-            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-              <a className="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a className="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a className="dropdown-item" href="faq.html">FAQ</a>
-              <a className="dropdown-item" href="404.html">404</a>
-              <a className="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div className="container">
+          <Link className="navbar-brand" to="">Fatec Guarulhos</Link>
+            <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Institucional
+                </Link>
+                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                  <Link className="dropdown-item" to=""> Sobre a Fatec Guarulhos</Link>
+                  <Link className="dropdown-item" to=""> Histórico</Link>
+                  <Link className="dropdown-item" to=""> Administração</Link>
+                </div>
+              </li>
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Acadêmico
+                </Link>
+                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                  <Link className="dropdown-item" to=""> Biblioteca</Link>
+                  <Link className="dropdown-item" to=""> Calendário Acadêmico</Link>
+                  <Link className="dropdown-item" to=""> Docentes</Link>
+                  <Link className="dropdown-item" to=""> Discentes</Link>
+                </div>
+              </li>
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                  Cursos
+                </Link>
+                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
+                  <Link className="dropdown-item" to=""> Análise e Desenvolvimento de Sistemas</Link>
+                  <Link className="dropdown-item" to=""> Gestão da Produção Industrial</Link>
+                  <Link className="dropdown-item" to=""> Logística</Link>
+                  <Link className="dropdown-item" to=""> Logística Aeroportuária</Link>
+                  <Link className="dropdown-item" to=""> Comércio Exterior</Link>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     )
   };
   
