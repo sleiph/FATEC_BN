@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './assets/pages/page-landing';
-import Academico from './assets/pages/Academico';
+import Academico from './assets/pages/academic';
 import Cursos from './assets/pages/courses';
 
 export default function Routes(){

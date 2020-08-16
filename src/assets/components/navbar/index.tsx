@@ -1,49 +1,67 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 import '../../styles/bootstrap.css';
 import '../../styles/global.css';
 
 function NavBar() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div className="container">
-          <Link className="nav-link" to="/"><h1 className="text-white">FATEC</h1></Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to=""></Link>
-              </li>
-              <div className="dropdown">
-                <li className="nav-item">
-                  <Link className="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" to="#">Cursos</Link>
-                  <div className="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
-                    <Link className="dropdown-item text-light" to="#">Análise e Desenvolvimento de Sistemas</Link>
-                    <Link className="dropdown-item text-light" to="#">Comércio Exterior</Link>
-                    <Link className="dropdown-item text-light" to="#">Gestão da Produção Industrial</Link>
-                    <Link className="dropdown-item text-light" to="#">Logística</Link>
-                    <Link className="dropdown-item text-light" to="#">Logística Aeroportuária</Link>
-                  </div>
-                </li>
-              </div>
-              <div className="dropdown">
-                <li className="nav-item">
-                  <Link className="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" to="#">Acadêmico</Link>
-                  <div className="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
-                    <Link className="dropdown-item text-light" to="#">Biblioteca</Link>
-                    <Link className="dropdown-item text-light" to="#">Calendário Acadêmico</Link>
-                    <Link className="dropdown-item text-light" to="#">Docentes</Link>
-                    <Link className="dropdown-item text-light" to="#">Discentes</Link>
-                  </div>
-                </li>
-              </div>
-            </ul>
-          </div>
-        </div>
-    </nav>
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div className="container">
+      <a className="navbar-brand" href="index.html">Fatec Guarulhos</a>
+      <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarResponsive">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="about.html">About</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="services.html">Services</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a className="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+              <a className="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+              <a className="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+              <a className="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+              <a className="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+            </div>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a className="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+              <a className="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+              <a className="dropdown-item" href="blog-post.html">Blog Post</a>
+            </div>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other Pages
+            </a>
+            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
+              <a className="dropdown-item" href="full-width.html">Full Width Page</a>
+              <a className="dropdown-item" href="sidebar.html">Sidebar Page</a>
+              <a className="dropdown-item" href="faq.html">FAQ</a>
+              <a className="dropdown-item" href="404.html">404</a>
+              <a className="dropdown-item" href="pricing.html">Pricing Table</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     )
   };
   

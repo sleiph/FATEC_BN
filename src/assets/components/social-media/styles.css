@@ -1,18 +1,11 @@
 :root{
     --facebook: #3B5998;
     --twitter: #3CF;
-    --instagram: #DC4A38;
+    --instagram: #C13584;
     --whatsapp: #25D366;
     --linkedin: #2867B2;
 }
 
-body {
-    height: 100vh;
-    background: var(--color-background);
-
-    display: grid;
-    place-items: center;
-}
 
 .social-media {
     display: flex;
@@ -21,10 +14,10 @@ body {
 }
 
 .social-media > div {
-    width:6rem;
-    height:6rem;
+    width:2rem;
+    height:2rem;
     background: #fff;
-    font-size:3rem;
+    font-size:1rem;
     display:grid;
     align-self: center;
     place-items: center;
